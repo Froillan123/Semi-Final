@@ -34,15 +34,20 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width:1rem;
+  width: 2em;
+  height: 1em;
 }
 
 html::-webkit-scrollbar-track{
-    background:transparent;
+  background:var(--black);
+  border-radius: 100vw;
+  margin-block: 0.5em;
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--black);
+  background: linear-gradient(red, orange);
+  border-radius: 100vw;
+  margin-block: 0.5em;
 }
 
 section{
@@ -70,7 +75,7 @@ section{
   height:100%;
   width: 100%;
   z-index: 10000;
-  background: rgb(65, 2, 2);
+  background: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,8 +506,8 @@ height: 45px;
   margin-left: 50px;
 }
  span{
-font-size: 16px;
-}
+ font-size: 16px;
+ }
 form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
@@ -514,11 +519,7 @@ form .user-details .input-box{
     max-height: 300px;
     overflow-y: scroll;
   }
-  .user-details::-webkit-scrollbar-thumb{
-    width: 15px;
-    background:var(--green);
-  }
-  }
+}
   @media(max-width: 459px){
   .container .content .category{
     flex-direction: column;
@@ -589,5 +590,5 @@ form .user-details .input-box{
   html{
       font-size: 50%;
   }
-
+    
 }

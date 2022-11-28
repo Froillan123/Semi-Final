@@ -34,15 +34,20 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width:1rem;
+    width: 2em;
+    height: 1em;
 }
 
 html::-webkit-scrollbar-track{
-    background:transparent;
+    background:var(--black);
+    border-radius: 100vw;
+    margin-block: 0.5em;
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--black);
+    background: linear-gradient(red, orange);
+    border-radius: 100vw;
+    margin-block: 0.5em;
 }
 
 section{
@@ -54,7 +59,7 @@ section{
     height:100%;
     width: 100%;
     z-index: 10000;
-    background: rgb(65, 2, 2);
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,15 +322,16 @@ section{
 }
 
 .reviews .reviews-slider .box{
-    border:var(--border);
+    border: 2px solid black;
     padding:2rem;
     text-align: center;
     margin:2rem 0;
     height: 50rem;
+    margin: 20px;
 }
 
 .reviews .reviews-slider .box:hover{
-    border:var(--border-hover);
+    border: 4px solid rgb(103, 0, 0);
 }
 
 .reviews .reviews-slider .box img{

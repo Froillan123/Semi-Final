@@ -34,15 +34,20 @@ html{
 }
 
 html::-webkit-scrollbar{
-    width:1rem;
+    width: 2em;
+    height: 1em;
 }
 
 html::-webkit-scrollbar-track{
-    background:transparent;
+    background:var(--black);
+    border-radius: 100vw;
+    margin-block: 0.5em;
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--black);
+    background: linear-gradient(red, orange);
+    border-radius: 100vw;
+    margin-block: 0.5em;
 }
 
 section{
@@ -491,10 +496,6 @@ section{
     text-decoration: line-through;
 }
 
-.arrivals .arrivals-slider .box .content .stars i{
-    font-size: 1.5rem;
-    color:var(--green);
-}
 
 .deal{
     background:#f3f3f3;
@@ -628,10 +629,6 @@ section{
     padding-right: 2rem;
 }
 
-.footer .box-container .box .map{
-    width:100%;
-}
-
 .footer .share{
     padding:1rem 0;
     text-align: center;
@@ -673,7 +670,7 @@ section{
     height:100%;
     width: 100%;
     z-index: 10000;
-    background: rgb(65, 2, 2);
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
