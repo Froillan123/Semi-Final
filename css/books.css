@@ -23,14 +23,14 @@
     text-decoration: none;
     text-transform: capitalize;
     transition:all .2s linear;
-    transition:width none;
+    transition: width none;
 }
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
-    scroll-behavior: smooth;
+    scroll-behavior:auto;
 }
 
 html::-webkit-scrollbar{
@@ -51,7 +51,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-    padding:5rem 9%;
+    padding:5rem 12%;
 }
 
 .heading{
@@ -214,7 +214,7 @@ section{
     background:var(--dark-color);
 }
 
-.login-form-container{
+.login-form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,11 +226,11 @@ section{
     width:100%;
 }
 
-.login-form-container.active{
+.login-form.active{
     right:0;
 }
 
-.login-form-container form{
+.login-form form{
     background:#fff;
     border:var(--border);
     width:40rem;
@@ -240,20 +240,20 @@ section{
     margin:2rem;
 }
 
-.login-form-container form h3{
+.login-form form h3{
     font-size: 2.5rem;
     text-transform: uppercase;
     color:var(--black);
     text-align: center;
 }
 
-.login-form-container form span{
+.login-form form span{
     display: block;
     font-size: 1.5rem;
     padding-top: 1rem;
 }
 
-.login-form-container form .box{
+.login-form form .box{
     width: 100%;
     margin:.7rem 0;
     font-size: 1.6rem;
@@ -264,37 +264,37 @@ section{
     text-transform: none;
 }
 
-.login-form-container form .checkbox{
+.login-form form .checkbox{
     display:flex;
     align-items: center;
     gap:.5rem;
     padding:1rem 0;
 }
 
-.login-form-container form .checkbox label{
+.login-form form .checkbox label{
     font-size: 1.5rem;
     color:var(--light-color);
     cursor: pointer;
 }
 
-.login-form-container form .btn{
+.login-form form .btn{
     text-align: center;
     width:100%;
     margin:1.5rem 0;
 }
 
-.login-form-container form p{
+.login-form form p{
     padding-top: .8rem;
     color:var(--light-color);
     font-size: 1.5rem;
 }
 
-.login-form-container form p a{
+.login-form form p a{
     color:var(--green);
     text-decoration: underline;
 }
 
-.login-form-container #close-login-btn{
+.login-form #close-login-btn{
     position: absolute;
     top:1.5rem; right:2.5rem;
     font-size: 5rem;
@@ -302,38 +302,38 @@ section{
     cursor: pointer;
 }
 
-.featured .featured-slider .box{
-    margin:2rem 0;
+.book .book-slider .box{
+    margin:3rem 0;
     position: relative;
     overflow: hidden;
     border:var(--border);
     text-align: center;
 }
 
-.featured .featured-slider .box:hover{
+.book .book-slider .box:hover{
     border:var(--border-hover);
 }
 
-.featured .featured-slider .box .image{
+.book .book-slider .box .image{
     padding:1rem;
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 
-.featured .featured-slider .box:hover .image{
-    transform: translateY(6rem);
+.book .book-slider .box:hover .image{
+    transform: scale(1.1)
 }
 
-.featured .featured-slider .box .image img{
+.book .book-slider .box .image img{
     height: 25rem;
 }
 
 
-.featured .featured-slider .box .content{
+.book .book-slider .box .content{
     background:#eee;
     padding:1.5rem;
 }
 
-.featured .featured-slider .box .content h3{
+.book .book-slider .box .content h3{
     font-size: 2rem;
     color:var(--black);
 }

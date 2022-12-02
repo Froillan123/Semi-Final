@@ -321,32 +321,31 @@ section{
     cursor: pointer;
 }
 
-.reviews .reviews-slider .box{
+.group .member-slider .box{
     border: 2px solid black;
     padding:2rem;
     text-align: center;
-    margin:2rem 0;
-    height: 50rem;
-    margin: 20px;
+    margin: 4rem 0;
+    height: 55rem;
 }
 
-.reviews .reviews-slider .box:hover{
-    border: 4px solid rgb(103, 0, 0);
+.group .member-slider .box:hover{
+    border: 3px solid rgb(103, 0, 0);
 }
 
-.reviews .reviews-slider .box img{
+.group .member-slider .box img{
     height:15rem;
     width:15rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.reviews .reviews-slider .box h3{
+.group .member-slider .box h3{
     color:var(--black);
     font-size: 4.2rem;
     padding:.5rem 0;
 }
-.reviews .reviews-slider .box p{
+.group .member-slider .box p{
     font-size: 20px;
 }
 

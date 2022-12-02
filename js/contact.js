@@ -46,7 +46,7 @@ function fadeOut(){
   setTimeout(loader, 1500);
 }
 
-var swiper = new Swiper(".reviews-slider", {
+var swiper = new Swiper(".member-slider", {
   spaceBetween: 10,
   grabCursor:true,
   loop:true,

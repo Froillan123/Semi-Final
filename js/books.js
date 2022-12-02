@@ -4,7 +4,7 @@ document.querySelector('#search-btn').onclick = () =>{
   searchForm.classList.toggle('active');
 }
 
-let loginForm = document.querySelector('.login-form-container');
+let loginForm = document.querySelector('.login-form');
 
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
@@ -47,7 +47,7 @@ function fadeOut(){
 }
 
 
-var swiper = new Swiper(".featured-slider", {
+var swiper = new Swiper(".book-slider", {
   spaceBetween: 10,
   loop:true,
   centeredSlides: true,
