@@ -5,26 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 5 Semi-Final Project</title>
-    <!-- swiper css -->
+      <!-- swiper css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!-- swiper css -->
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- font awesome cdn link  -->
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/reserve.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- custom css file link  -->
+
 </head>
 <body>
-<!-- loader -->
+  <!-- loader -->
   <div class="loader-container">
     <img src="image/loader-img.gif" alt="">
-  </div>
-<!-- loader -->
-
+</div>
 <!-- header section starts  -->
 
 <header class="header">
@@ -70,9 +66,8 @@
   <a href="reserve.html" <i class="fa fa-address-book" aria-hidden="true"></i></a>
   <a href="books.html" class="fa fa-book"></a>
 </nav>
-<!-- bottom navbar  -->
 
-<!-- Log.in Form Section Starts -->
+
 <div class="login-form-container">
 
   <div id="close-login-btn" class="fas fa-times"></div>
@@ -93,9 +88,8 @@
   </form>
 
 </div>
-<!-- Log.in Form Section ends -->
 
-<!-- Reservation Form Section Starts -->
+
 <div class="container">
   <div class="title"><h1>Library Reservation Form</h1></div>
   <div class="content">
@@ -103,71 +97,88 @@
       <div class="user-details">
         <div class="input-box">
           <span class="details">Full Name</span>
-          <input type="text" placeholder="Enter your name" required id="name">
+          <input type="text" placeholder="Enter your name" required>
         </div>
         <div class="input-box">
           <span class="details">Address</span>
-          <input type="text" placeholder="Enter Your Full Address" required id="address">
+          <input type="text" placeholder="Enter Your Full Address" required>
         </div>
         <div class="input-box">
           <span class="details">Email</span>
-          <input type="email" placeholder="Enter your email" required id="email">
+          <input type="text" placeholder="Enter your email" required>
         </div>
         <div class="input-box">
           <span class="details">Phone Number</span>
-          <input type="text" placeholder="Enter your number" required id="number">
+          <input type="text" placeholder="Enter your number" required>
         </div>
 
         <div class="input-box">
           <span class="details">Location</span>
-          <select name="location" required id="location" size="" >
-            <option></option>
-            <option>Select The Location</option>
-            <option>UC Main Library</option>
-            <option>National Bookstore</option>
-            <option>UC Banilad Library</option>
-            <option>Central Books</option>
-            <option>Rex Books</option>
+          <select name="location" id="location" required>
+            <option value="">Select The Location</option>
+            <option value="">UC Main Library</option>
+            <option value="">National Bookstore</option>
+            <option value="">UC Banilad Library</option>
+            <option value="">Central Books</option>
+            <option value="">Rex Books</option>
           </select>
         </div>
         <div class="input-box">
           <span class="details">What Time</span>
-          <input type="time" placeholder="Time" required id="time">
+          <input type="time" placeholder="Time" required>
         </div>
       <div class="input-box">
         <span class="details">What Is The Date</span>
-        <input type="date" required placeholder="Date" required id="date">
+        <input type="date" required placeholder="Date" required>
       </div>
       <div class="input-box">
         <span class="details">How Many People</span>
-        <select name="people" id="people" required id="people">
-          <option></option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
+        <select name="people" id="people" required>
+          <option value="1">How Many People</option>
+          <option value="2">1</option>
+          <option value="3">2</option>
+          <option value="4">3</option>
+          <option value="5">4</option>
+          <option value="6">5</option>
+          <option value="7">6</option>
+          <option value="8">7</option>
+          <option value="9">8</option>
+          <option value="10">9</option>
+          <option value="11">10</option>
         </select>
       </div>
       </div>
       <br>
-
-      <div class="input">
-        <input type="submit" id="submit" value="submit" onclick="msg()" class="submit">
+      <div class="gender-details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender-title">Gender</span>
+        <div class="category">
+          <label for="dot-1">
+          <span class="dot one"></span>
+          <span class="gender">Male</span>
+        </label>
+        <label for="dot-2">
+          <span class="dot two"></span>
+          <span class="gender">Female</span>
+        </label>
+        <label for="dot-3">
+          <span class="dot three"></span>
+          <span class="gender">Prefer not to say</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Submit">
       </div>
     </form>
-
   </div>
 </div>
-<!-- Reservation Form Section Ends -->
 <br><br><br><br>
 
-<!-- footer section and location starts-->
+
+<!-- footer section and location -->
 
 
 <section class="footer">
@@ -221,8 +232,6 @@
   <div class="credit"> created by <span>Group 5</span> @all rights reserved 2022 </div>
 
 </section>
-
-<!-- footer section and location ends-->
 </body>
 <script>
 searchForm = document.querySelector('.search-form');
@@ -273,26 +282,7 @@ function fadeOut(){
   setTimeout(loader, 1500);
 }
 
-function msg(){
-          
-  let name = document.getElementById('name').value;
-  let address = document.getElementById('address').value;
-  let email = document.getElementById('email').value;
-  let number = document.getElementById('number').value;
-  let time = document.getElementById('time').value; 
-  let date = document.getElementById('date').value;
-  var location = document.getElementById('location').value;
-  var people = document.getElementById('people').value;
-  var submit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) +  + parseFloat(time) + parseFloat(date);
 
-          
-  if(submit, people){
-    alert("Your reservation form has been saved. Please wait for the email that will be send to you.");
-  }
-  else{
-    alert("Opps! Kindly fill up all the forms.");
-  }
-}
 
  </script>
 </html>

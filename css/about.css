@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-/* In this section something that our website has contain */
+
 :root{
     --green:#27ae60;
     --dark-color:#219150;
@@ -88,9 +88,8 @@ section{
 .btn:hover{
   background:var(--light);
 }
-/* In this section something that our website has contain */
 
-/* Header Section Starts */
+
 .header .header-1{
     background:#fff;
     padding:1.5rem 9%;
@@ -190,9 +189,7 @@ section{
     z-index: 1000;
 
 }
-/* Header Section Starts */
 
-/* Bottom navbar section starts */
 .bottom-navbar{
     text-align: center;
     background:var(--green);
@@ -211,9 +208,8 @@ section{
 .bottom-navbar a:hover{
     background:var(--dark-color);
 }
-/* Bottom navbar section ends */
 
-/* Log.in section starts */
+ 
 .login-form-container{
   display: flex;
   align-items: center;
@@ -301,9 +297,6 @@ section{
   color:var(--black);
   cursor: pointer;
 }
-/* Log.in section ends */
-
-/* Row section starts */
 .row{
   width: 80%;
   max-width: 1170px;
@@ -373,9 +366,7 @@ section{
 .row .contentWrapper a:hover{
  background: maroon;
 }
-/* Row section ends */
-
-/* Footer Section Starts */
+ /* footer styling */
  .footer .box-container{
   margin-left: 100px;
   margin-bottom: 50px;
@@ -440,9 +431,7 @@ section{
 .footer .credit span{
   color:var(--blue);
 } 
- /* Footer Section Starts */
- 
-/* Media Queries Section Start */
+  
 @media (max-width: 768px) {
   .row{
       width: 90%;
@@ -548,4 +537,3 @@ section{
       top:115%;
   }
 }
-/* Media Queries Section ends */
