@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+/* In this section something that our website has contain */
 :root{
     --green:#27ae60;
     --dark-color:#219150;
@@ -113,7 +113,9 @@ section{
 .btn:hover{
     background:var(--light);
 }
+/* In this section something that our website has contain */
 
+/* header section starts */
 .header .header-1{
     background:#fff;
     padding:1.5rem 9%;
@@ -213,7 +215,9 @@ section{
     z-index: 1000;
 
 }
+/* header section ends */
 
+/* bottom navbar stars */
 .bottom-navbar{
     text-align: center;
     background:var(--green);
@@ -232,7 +236,9 @@ section{
 .bottom-navbar a:hover{
     background:var(--dark-color);
 }
+/* bottom navbar ends */
 
+/* login form starts */
 .login-form-container{
     display: flex;
     align-items: center;
@@ -328,7 +334,9 @@ section{
     margin: 4rem 0;
     height: 55rem;
 }
+/* login form ends*/
 
+/* group-contacts starts */
 .group .member-slider .box:hover{
     border: 3px solid rgb(103, 0, 0);
 }
@@ -348,9 +356,9 @@ section{
 .group .member-slider .box p{
     font-size: 20px;
 }
+/* group-contacts ends */
 
-
- /* footer styling */
+ /* footer section starts */
  .footer .box-container{
   margin-left: 100px;
   margin-bottom: 50px;
@@ -415,6 +423,9 @@ section{
 .footer .credit span{
   color:var(--blue);
 } 
+ /* footer section ends */
+
+ /* Media Queries */
 @media (max-width:450px){
  
   html{
@@ -487,3 +498,4 @@ section{
      top:115%;
  }
 }
+ /* Media Queries */
