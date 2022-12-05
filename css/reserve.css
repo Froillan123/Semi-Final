@@ -76,6 +76,7 @@ section{
   width: 100%;
   z-index: 10000;
   background: rgb(255, 255, 255);
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +89,7 @@ section{
 .loader-container img{
   height:50vh;
 }
+
 
 .header .header-1{
     background:#fff;
@@ -329,6 +331,7 @@ form .input-box span.details{
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
+  
 }
 .user-details .input-box input{
   height: 45px;
@@ -378,10 +381,7 @@ height: 45px;
 .user-details .input-box input:valid{
   border-color: rgb(106, 109, 127);
 }
- form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
- }
+
  form .category{
    display: flex;
    width: 80%;
@@ -402,20 +402,16 @@ height: 45px;
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #024488;
-   border-color: #d9d9d9;
- }
+ 
+
  form input[type="radio"]{
    display: none;
  }
- form .button{
+ form .input{
    height: 45px;
    margin: 35px 0
  }
- form .button input{
+ form .input input{
    height: 100%;
    width: 100%;
    border-radius: 5px;
@@ -428,7 +424,7 @@ height: 45px;
    transition: all 0.3s ease;
    background: #024488;
  }
- form .button input:hover{
+ form .input input:hover{
   background: linear-gradient(-135deg,  rgb(54, 210, 54), rgb(126, 179, 20));
   }
   
