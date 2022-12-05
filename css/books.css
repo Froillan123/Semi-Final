@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+/* In this section something that our website has contain */
 :root{
     --green:#27ae60;
     --dark-color:#219150;
@@ -94,7 +94,9 @@ section{
 .btn:hover{
     background:var(--light);
 }
+/* In this section something that our website has contain */
 
+/* header section starts */
 .header .header-1{
     background:#fff;
     padding:1.5rem 9%;
@@ -194,7 +196,9 @@ section{
     z-index: 1000;
 
 }
+/* header section ends */
 
+/* bottom navbar starts */
 .bottom-navbar{
     text-align: center;
     background:var(--green);
@@ -213,7 +217,9 @@ section{
 .bottom-navbar a:hover{
     background:var(--dark-color);
 }
+/* bottom navbar ends */
 
+/* login form starts */
 .login-form{
     display: flex;
     align-items: center;
@@ -301,7 +307,9 @@ section{
     color:var(--black);
     cursor: pointer;
 }
+/* login form ends */
 
+/* book compilation section starts */
 .book .book-slider .box{
     margin:3rem 0;
     position: relative;
@@ -357,9 +365,9 @@ section{
     background: var(--black);
     color:#fff;
 }
+/* book compilation section ends */
 
-
-
+/* footer section starts */
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -422,6 +430,8 @@ section{
 .footer .credit span{
     color:var(--green);
 }
+/* footer section ends */
+
 /* loading style */
 .loader-container{
     position: fixed;
@@ -530,3 +540,4 @@ section{
     }
 
 }
+/* media queries  */

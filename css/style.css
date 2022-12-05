@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+
+/* In this section something that our website has contain */
 :root{
     --green:#27ae60;
     --dark-color:#219150;
@@ -94,7 +96,10 @@ section{
 .btn:hover{
     background:var(--light);
 }
-/* header styling */
+/* In this section something that our website has contain */
+
+/* Header Section Starts */
+/* Header styling */
 .header .header-1{
     background:#fff;
     padding:1.5rem 9%;
@@ -165,8 +170,12 @@ section{
 
 #search-btn{
     display: none;
+
 }
-/* navigation styling */
+/* Header styling ends */    
+
+
+/* Navigation styling */
 .header .header-2{
     background:var(--brown);
 }
@@ -194,7 +203,10 @@ section{
     z-index: 1000;
 
 }
-/* Bottom Nav */
+/* Navigation styling ends */
+/* Header Section Start */
+
+/* Bottom Nav Start*/
 .bottom-navbar{
     text-align: center;
     background:var(--green);
@@ -214,6 +226,10 @@ section{
     background:var(--dark-color);
 }
 
+/* Bottom Nav Ends */
+
+
+/* Log.in form */
 .login-form{
     display: flex;
     align-items: center;
@@ -302,6 +318,10 @@ section{
     cursor: pointer;
 }
 
+/* Log.in form Ends */
+
+
+/* Home section start */
 .home{
     background: url(../image/banner-bg.jpg) no-repeat;
     background-size: cover;
@@ -350,8 +370,9 @@ section{
     padding:1rem 0;
 }
 
+/* Home section ends */
 
-
+/* Featured books section starts */
 .featured .featured-slider .box{
     margin:2rem 0;
     position: relative;
@@ -431,6 +452,9 @@ section{
     color:#fff;
 }
 
+/* Featured books section ends */
+
+/* Subscribe for updates start */
 .subscribe{
     background:url(../image/letter-bg.jpg) no-repeat;
     background-size: cover;
@@ -461,7 +485,9 @@ section{
     border-radius: .5rem;
     text-transform: none;
 }
+/* Subscribe for updates ends */
 
+/* New Arrivals Section Start */
 .arrivals .arrivals-slider .box{
     display: flex;
     align-items:center;
@@ -496,8 +522,10 @@ section{
     color:var(--light-color);
     text-decoration: line-through;
 }
+/* New Arrivals Section ends*/
 
 
+/* Ads section starts */
 .ads{
     background:#f3f3f3;
     display: flex;
@@ -536,7 +564,9 @@ section{
     font-size: 1.7rem;
     line-height: 2;
 }
+/* Ads section ends */
 
+/* Group Members section starts */
 .group-member .group-slider .box{
     border:var(--border);
     padding:2rem;
@@ -560,8 +590,9 @@ section{
     font-size: 2.2rem;
     padding:.5rem 0;
 }
+/* Group Members section ends */
 
-
+/* Blogs section starts */
 .blogs .blogs-slider .box{
     margin:2rem 0;
     border:var(--border);
@@ -602,7 +633,10 @@ section{
     padding:1rem 0;
     line-height: 2;
 }
+/* Blogs section end */
 
+
+/* Footer section Starts */
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -665,7 +699,9 @@ section{
 .footer .credit span{
     color:var(--green);
 }
+/* Footer section ends */
 
+/* Loader Starts */
 .loader-container{
     position: fixed;
     top:0; left: 0;
@@ -685,9 +721,9 @@ section{
 .loader-container img{
     height:50vh;
 }
+/* Loader ends */
 
-
-/* media queries  */
+/* media queries starts */
 
 @media (max-width:991px){
 
@@ -773,3 +809,4 @@ section{
     }
 
 }
+/* media queries ends */
