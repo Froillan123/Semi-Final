@@ -19,12 +19,10 @@
     <!-- custom css file link  -->
 </head>
 <body>
-<!-- loader -->
-  <div class="loader-container">
-    <img src="image/loader-img.gif" alt="">
-  </div>
-<!-- loader -->
 
+<div class="loader-container">
+  <img src="image/loader-img.gif">
+</div>
 <!-- header section starts  -->
 
 <header class="header">
@@ -40,8 +38,8 @@
 
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="reserve.html" class="fas fa-bookmark"></a>
+            <a href="books.html" class="fas fa-book"></a>
             <div id="login-btn" class="fas fa-user"></div>
         </div>
 
@@ -77,12 +75,13 @@
 
   <div id="close-login-btn" class="fas fa-times"></div>
 
-  <form action="">
+  <form action="" id="form">
       <h3>sign in</h3>
       <span>username</span>
-      <input type="email" name="" class="box" placeholder="enter your email" id="">
+      <input type="email" name="" class="box" placeholder="enter your email" id="username">
       <span>password</span>
-      <input type="password" name="" class="box" placeholder="enter your password" id="">
+      <input type="password" name="" class="box" placeholder="enter your password" id="password">
+      <div id="error"></div>
       <div class="checkbox">
           <input type="checkbox" name="" id="remember-me">
           <label for="remember-me"> remember me</label>
@@ -99,30 +98,30 @@
 <div class="container">
   <div class="title"><h1>Library Reservation Form</h1></div>
   <div class="content">
-    <form action="#">
+
+    <form action="#" onsubmit="" id="reserve">
       <div class="user-details">
         <div class="input-box">
           <span class="details">Full Name</span>
-          <input type="text" placeholder="Enter your name" required id="name">
+          <input type="text" placeholder="Enter your name"  id="name">
         </div>
         <div class="input-box">
           <span class="details">Address</span>
-          <input type="text" placeholder="Enter Your Full Address" required id="address">
+          <input type="text" placeholder="Enter Your Full Address"  id="address">
         </div>
         <div class="input-box">
           <span class="details">Email</span>
-          <input type="email" placeholder="Enter your email" required id="email">
+          <input type="email" placeholder="Enter your email"  id="email">
         </div>
         <div class="input-box">
           <span class="details">Phone Number</span>
-          <input type="text" placeholder="Enter your number" required id="number">
+          <input type="text" placeholder="Enter your number"  id="number">
         </div>
 
         <div class="input-box">
           <span class="details">Location</span>
-          <select name="location" required id="location" size="" >
+          <select name="location"  id="location" size="" >
             <option></option>
-            <option>Select The Location</option>
             <option>UC Main Library</option>
             <option>National Bookstore</option>
             <option>UC Banilad Library</option>
@@ -132,15 +131,15 @@
         </div>
         <div class="input-box">
           <span class="details">What Time</span>
-          <input type="time" placeholder="Time" required id="time">
+          <input type="time" placeholder="Time" id="time">
         </div>
       <div class="input-box">
         <span class="details">What Is The Date</span>
-        <input type="date" required placeholder="Date" required id="date">
+        <input type="date"  placeholder="Date"  id="date">
       </div>
       <div class="input-box">
         <span class="details">How Many People</span>
-        <select name="people" id="people" required id="people">
+        <select name="people" id="people"  id="people">
           <option></option>
           <option>1</option>
           <option>2</option>
@@ -156,10 +155,10 @@
       </div>
       </div>
       <br>
-
       <div class="input">
         <input type="submit" id="submit" value="submit" onclick="msg()" class="submit">
       </div>
+
     </form>
 
   </div>
@@ -224,75 +223,6 @@
 
 <!-- footer section and location ends-->
 </body>
-<script>
-searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.toggle('active');
-}
-
-let loginForm = document.querySelector('.login-form-container');
-
-document.querySelector('#login-btn').onclick = () =>{
-  loginForm.classList.toggle('active');
-}
-
-document.querySelector('#close-login-btn').onclick = () =>{
-  loginForm.classList.remove('active');
-}
-
-window.onscroll = () =>{
-
-  searchForm.classList.remove('active');
-
-  if(window.scrollY > 80){
-    document.querySelector('.header .header-2').classList.add('active');
-  }else{
-    document.querySelector('.header .header-2').classList.remove('active');
-  }
-
-}
-
-window.onload = () =>{
-
-  if(window.scrollY > 80){
-    document.querySelector('.header .header-2').classList.add('active');
-  }else{
-    document.querySelector('.header .header-2').classList.remove('active');
-  }
-
-  fadeOut();
-
-}
-
-function loader(){
-  document.querySelector('.loader-container').classList.add('active');
-}
-
-function fadeOut(){
-  setTimeout(loader, 1500);
-}
-
-function msg(){
-          
-  let name = document.getElementById('name').value;
-  let address = document.getElementById('address').value;
-  let email = document.getElementById('email').value;
-  let number = document.getElementById('number').value;
-  let time = document.getElementById('time').value; 
-  let date = document.getElementById('date').value;
-  var location = document.getElementById('location').value;
-  var people = document.getElementById('people').value;
-  var submit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) +  + parseFloat(time) + parseFloat(date);
-
-          
-  if(submit, people){
-    alert("Your reservation form has been saved. Please wait for the email that will be send to you.");
-  }
-  else{
-    alert("Opps! Kindly fill up all the forms.");
-  }
-}
-
- </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/reserve.js"></script>
 </html>

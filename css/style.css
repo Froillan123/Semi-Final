@@ -317,6 +317,10 @@ section{
     color:var(--black);
     cursor: pointer;
 }
+#error{
+    color: red;
+    font-size: 15px;
+  }
 
 /* Log.in form Ends */
 

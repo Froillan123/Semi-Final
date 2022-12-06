@@ -326,19 +326,25 @@ section{
     color:var(--black);
     cursor: pointer;
 }
+#error{
+    color: red;
+    font-size: 15px;
+  }
 
+/* login form ends*/
+
+/* group-contacts starts */
 .group .member-slider .box{
-    border: 2px solid black;
+    border: 5px solid black;
     padding:2rem;
     text-align: center;
     margin: 4rem 0;
     height: 55rem;
 }
-/* login form ends*/
-
-/* group-contacts starts */
 .group .member-slider .box:hover{
-    border: 3px solid rgb(103, 0, 0);
+    border: 5px solid transparent;
+    border-image-source: linear-gradient(110deg,red,blue);
+    border-image-slice: 2;
 }
 
 .group .member-slider .box img{
