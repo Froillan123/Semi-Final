@@ -91,7 +91,7 @@ else{
   swal({
   icon: 'error',
   title: 'Please Fill Up The Form',
-  showConfirmButton: false,
+  showConfirmButton: true,
 })
 }
 if (reServe.length > 0){
