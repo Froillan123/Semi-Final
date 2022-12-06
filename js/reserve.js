@@ -4,10 +4,14 @@ document.querySelector('#search-btn').onclick = () =>{
   searchForm.classList.toggle('active');
 }
 
-let loginForm = document.querySelector('.login-form');
+let loginForm = document.querySelector('.login-form-container');
 
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () =>{
+  loginForm.classList.remove('active');
 }
 const name = document.getElementById('username');
 const password = document.getElementById('password');
@@ -27,10 +31,6 @@ form.addEventListener('submit', (e) =>{
     errorElement.innerText = message.join(', ')
   }
 })
-
-document.querySelector('#close-login-btn').onclick = () =>{
-  loginForm.classList.remove('active');
-}
 
 window.onscroll = () =>{
 
@@ -55,7 +55,6 @@ window.onload = () =>{
   fadeOut();
 
 }
-
 function loader(){
   document.querySelector('.loader-container').classList.add('active');
 }
@@ -64,33 +63,39 @@ function fadeOut(){
   setTimeout(loader, 1500);
 }
 
+function msg(){
+  let reServe = document.getElementById('reserve');
+  let name = document.getElementById('name').value;
+  let address = document.getElementById('address').value;
+  let email = document.getElementById('email').value;
+  let number = document.getElementById('number').value;
+  let time = document.getElementById('time').value; 
+  let date = document.getElementById('date').value;
+  var location = document.getElementById('location').value;
+  var people = document.getElementById('people').value;
+  var submit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) +  + parseFloat(time) + parseFloat(date);
 
-var swiper = new Swiper(".book-slider", {
-  spaceBetween: 10,
-  loop:true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    450: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-});
+  reServe.addEventListener('submit', (e) =>{ 
 
+  if(submit, people,name,address,email,number,time,date,location){
 
+  swal({
+  icon: 'success',
+  title: 'Your reservation form has been saved. Please wait for the email that will be send to you.',
+  showConfirmButton: true,
+  timer: 3000
+})	
+
+  }
+else{
+  swal({
+  icon: 'error',
+  title: 'Please Fill Up The Form',
+  showConfirmButton: false,
+})
+}
+if (reServe.length > 0){
+    e.preventDefault()
+}
+  }
+)}

@@ -30,7 +30,8 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
-    scroll-behavior:auto;
+    scroll-behavior:smooth;
+    
 }
 
 html::-webkit-scrollbar{
@@ -307,6 +308,11 @@ section{
     color:var(--black);
     cursor: pointer;
 }
+#error{
+    color: red;
+    font-size: 15px;
+  }
+
 /* login form ends */
 
 /* book compilation section starts */
