@@ -54,6 +54,33 @@ window.onload = () =>{
   fadeOut();
 
 }
+function mySub(){
+let subscribe = document.getElementById('sub');
+let eMail = document.getElementById('putemail').value;
+let submit = document.getElementById('submit');
+
+subscribe.addEventListener('submit', (e) => {
+  e.preventDefault()
+  if(eMail){
+
+    swal({
+    icon: 'success',
+    title: 'You are now subscribe to our website',
+    showConfirmButton: true,
+    timer: 3000
+  })
+}
+else{
+  swal({
+    icon: 'error',
+    title: 'Please put your email',
+    showConfirmButton: true,
+    timer: 3000
+  })
+}
+})}
+
+
 
 function loader(){
   document.querySelector('.loader-container').classList.add('active');
