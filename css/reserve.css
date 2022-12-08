@@ -550,6 +550,9 @@ form .user-details .input-box{
     max-height: 300px;
     overflow-y: scroll;
   }
+  #reset{
+    width: 100%;
+  }
 }
   @media(max-width: 459px){
   .container .content .category{
