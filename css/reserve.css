@@ -441,7 +441,21 @@ height: 45px;
  }
  form .input input:hover{
   background: linear-gradient(-135deg,  rgb(54, 210, 54), rgb(126, 179, 20));
+  transform: scale(1.03);
   }
+
+#reset{
+  width: 15%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+#reset:hover{
+  transform: scale(1.1);
+}
 /* Reservation Form Section Ends */
 
   /* footer styling */

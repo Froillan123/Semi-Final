@@ -343,7 +343,7 @@ section{
 }
 .group .member-slider .box:hover{
     border: 5px solid transparent;
-    border-image-source: linear-gradient(110deg,red,blue);
+    border-image-source: linear-gradient(110deg, #A24857, rgb(119, 48, 48));
     border-image-slice: 2;
 }
 

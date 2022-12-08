@@ -73,11 +73,13 @@ function msg(){
   let date = document.getElementById('date').value;
   var location = document.getElementById('location').value;
   var people = document.getElementById('people').value;
-  var submit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) +  + parseFloat(time) + parseFloat(date);
+
+
+  var suBmit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) + parseFloat(time) + parseFloat(date);
 
   reServe.addEventListener('submit', (e) =>{ 
 
-  if(submit, people,name,address,email,number,time,date,location){
+  if(suBmit,name,address,email,number,time,date,people){
 
   swal({
   icon: 'success',
@@ -85,7 +87,6 @@ function msg(){
   showConfirmButton: true,
   timer: 3000
 })	
-
   }
 else{
   swal({
