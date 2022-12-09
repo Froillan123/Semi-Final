@@ -53,25 +53,6 @@ html::-webkit-scrollbar-thumb{
 section{
     padding:5rem 9%;
 }
-.loader-container{
-    position: fixed;
-    top:0; left: 0;
-    height:100%;
-    width: 100%;
-    z-index: 10000;
-    background: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .loader-container.active{
-    display: none;
-  }
-  
-  .loader-container img{
-    height:50vh;
-  }
 
 .heading{
     text-align: center;
@@ -430,7 +411,28 @@ section{
   color:var(--blue);
 } 
  /* footer section ends */
-
+/* loader styling */
+.loader-container{
+    position: fixed;
+    top:0; left: 0;
+    height:100%;
+    width: 100%;
+    z-index: 10000;
+    background: rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loader-container.active{
+    display: none;
+  }
+  
+  .loader-container img{
+    height:50vh;
+  }
+  /* loader styling */
  /* Media Queries */
 @media (max-width:450px){
  

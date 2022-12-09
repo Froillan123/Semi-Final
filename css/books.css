@@ -52,7 +52,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-    padding:5rem 12%;
+    padding:5rem 10%;
 }
 
 .heading{
@@ -438,7 +438,7 @@ section{
 }
 /* footer section ends */
 
-/* loading style */
+/* loader styling */
 .loader-container{
     position: fixed;
     top:0; left: 0;
@@ -446,20 +446,20 @@ section{
     width: 100%;
     z-index: 10000;
     background: rgb(255, 255, 255);
+    
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.loader-container.active{
+  }
+  
+  .loader-container.active{
     display: none;
-}
-
-.loader-container img{
+  }
+  
+  .loader-container img{
     height:50vh;
-}
-
-
+  }
+  /* loader styling */
 /* media queries  */
 
 @media (max-width:991px){

@@ -54,6 +54,14 @@ window.onload = () =>{
   fadeOut();
 
 }
+function loader(){
+  document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut(){
+  setTimeout(loader, 500);
+}
+
 function mySub(){
 let subscribe = document.getElementById('sub');
 let eMail = document.getElementById('putemail').value;
@@ -80,15 +88,6 @@ else{
 }
 })}
 
-
-
-function loader(){
-  document.querySelector('.loader-container').classList.add('active');
-}
-
-function fadeOut(){
-  setTimeout(loader, 1500);
-}
 
 var swiper = new Swiper(".books-slider", {
   loop:true,

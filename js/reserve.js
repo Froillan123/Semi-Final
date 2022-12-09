@@ -60,7 +60,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setTimeout(loader, 1500);
+  setTimeout(loader, 500);
 }
 
 function msg(){
@@ -85,7 +85,6 @@ function msg(){
   icon: 'success',
   title: 'Your reservation form has been saved. Please wait for the email that will be send to you.',
   showConfirmButton: true,
-  timer: 3000
 })	
   }
 else{
