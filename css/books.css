@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
 /* In this section something that our website has contain */
 :root{
     --green:#27ae60;
@@ -23,15 +25,14 @@
     text-decoration: none;
     text-transform: capitalize;
     transition:all .2s linear;
-    transition: width none;
+    transition:width none;
 }
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
-    scroll-behavior:smooth;
-    
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
@@ -52,7 +53,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-    padding:5rem 10%;
+    padding:5rem 9%;
 }
 
 .heading{
@@ -97,7 +98,8 @@ section{
 }
 /* In this section something that our website has contain */
 
-/* header section starts */
+/* Header Section Starts */
+/* Header styling */
 .header .header-1{
     background:#fff;
     padding:1.5rem 9%;
@@ -166,8 +168,14 @@ section{
     color:var(--green);
 }
 
+#search-btn{
+    display: none;
+
+}
+/* Header styling ends */    
 
 
+/* Navigation styling */
 .header .header-2{
     background:var(--brown);
 }
@@ -195,9 +203,10 @@ section{
     z-index: 1000;
 
 }
-/* header section ends */
+/* Navigation styling ends */
+/* Header Section Start */
 
-/* bottom navbar starts */
+/* Bottom Nav Start*/
 .bottom-navbar{
     text-align: center;
     background:var(--green);
@@ -216,9 +225,11 @@ section{
 .bottom-navbar a:hover{
     background:var(--dark-color);
 }
-/* bottom navbar ends */
 
-/* login form starts */
+/* Bottom Nav Ends */
+
+
+/* Log.in form */
 .login-form{
     display: flex;
     align-items: center;
