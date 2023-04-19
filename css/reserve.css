@@ -417,22 +417,26 @@ height: 45px;
    transition: all 0.3s ease;
    background: #024488;
  }
- form .input input:hover{
-  background: linear-gradient(-135deg,  rgb(54, 210, 54), rgb(126, 179, 20));
-  transform: scale(1.03);
-  }
+
 
 #reset{
-  width: 15%;
-  padding: 10px 10px;
-  border-radius: 5px;
+  display: block;
+  float: left;
+  width: 48%;
   background-color: red;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
+  opacity: 0.8;
 }
 #reset:hover{
-  transform: scale(1.1);
+  opacity: 1;
+  background-color: rgba(236, 92, 92, 0.792);
+}
+#submit{
+  display: block;
+  float: right;
+  width: 48%;
+}
+#submit:hover{
+background: linear-gradient(-135deg,  rgba(54, 210, 54, 0.761), rgba(126, 179, 20, 0.755));
 }
 /* Reservation Form Section Ends */
 
@@ -618,7 +622,14 @@ form .user-details .input-box{
   }
 
 }
-
+@media (max-width: 768px) {
+  #reset,
+  #submit {
+    width: 100%;
+    margin-top: 10px;
+    float: none;
+  }
+}
 @media (max-width:450px){
 
   html{

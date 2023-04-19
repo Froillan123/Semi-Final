@@ -74,28 +74,24 @@ function msg(){
   var location = document.getElementById('location').value;
   var people = document.getElementById('people').value;
 
-
-  var suBmit =  parseFloat(name) + parseFloat(address) + parseFloat(email) + parseFloat(location) + parseFloat(number) + parseFloat(time) + parseFloat(date);
-
-  reServe.addEventListener('submit', (e) =>{ 
-
-  if(suBmit,name,address,email,number,time,date,people){
-
-  swal({
-  icon: 'success',
-  title: 'Your reservation form has been saved. Please wait for the email that will be send to you.',
-  showConfirmButton: true,
-})	
+  // Removed parseFloat as it is not necessary and can cause issues
+  // Also changed the if condition to check if the fields are not empty
+  if(name && address && email && location && number && time && date && people){
+    swal({
+      icon: 'success',
+      title: 'Your reservation form has been saved. Please wait for the email that will be sent to you.',
+      showConfirmButton: true,
+    });
+  } else {
+    swal({
+      icon: 'error',
+      title: 'Please Fill Up The Form',
+      showConfirmButton: true,
+    });
   }
-else{
-  swal({
-  icon: 'error',
-  title: 'Please Fill Up The Form',
-  showConfirmButton: true,
-})
-}
-if (reServe.length > 0){
-    e.preventDefault()
-}
+
+  // Moved the preventDefault call outside of the if-else block
+  if (reServe.length > 0){
+    event.preventDefault();
   }
-)}
+}

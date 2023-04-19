@@ -1,8 +1,3 @@
-searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.toggle('active');
-}
 
 let loginForm = document.querySelector('.login-form');
 
@@ -61,7 +56,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setTimeout(loader, 500);
+  setTimeout(loader, 250);
 }
 
 var swiper = new Swiper(".book-slider", {
