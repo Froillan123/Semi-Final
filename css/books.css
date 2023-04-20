@@ -321,7 +321,14 @@ section{
     color: red;
     font-size: 15px;
   }
+  #search-btn{
+    display: inline-block;
+}
 
+#search-btn{
+    display: none;
+
+}
 /* login form ends */
 
 /* book compilation section starts */
