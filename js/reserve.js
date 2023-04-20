@@ -81,6 +81,8 @@ function msg(){
       icon: 'success',
       title: 'Your reservation form has been saved. Please wait for the email that will be sent to you.',
       showConfirmButton: true,
+    }).then(function(){
+      window.location.href = "reserve.html"; // Reload the page if 'OK' is clicked
     });
   } else {
     swal({
@@ -95,3 +97,5 @@ function msg(){
     event.preventDefault();
   }
 }
+
+

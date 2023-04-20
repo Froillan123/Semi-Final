@@ -6,45 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
     <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    
 
-<form action="../index.htm" style="border:1px solid #ccc">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-  
-      <label for="email"><b>Email</b></label><br>
-      <input type="text" placeholder="Enter Email" required id="email">
-    <br>
-      <label for="psw"><b>Password</b></label><br>
-      <input type="password" placeholder="Enter Password"  required id="password">
-  <br>
-    
-  
-  
-      <div class="clearfix">
-        <input type="reset" class="cancelbtn" value="Cancel">
-        <button type="submit" class="signupbtn" onclick="signup()">Sign Up</button>
-      </div>
-    </div>
-  </form>
+    <form action="../index.htm" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="email\"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" required id="email">
+            <br>
+            <label for="password\\\"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password (8-16 characters)"  required id="password">
+            <br>
+            <label for="re_password"><b>Repeat Password</b></label><br>
+            <input type="password" placeholder="Repeat Password"  required id="re_password">
+            <br>
+
+            <div class="clearfix">
+                <input type="reset" class="cancelbtn" value="Cancel">
+                <button type="button" class="signupbtn" onclick="signup()">Sign Up</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function signup(){
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let re_password = document.getElementById('re_password').value;
+
+            if(email === ''){
+                swal({
+                    title: "Email Required!",
+                    text: "Please enter your email address to continue with the sign-up process.",
+                    icon: "error",
+                    button: "OK",
+                });
+            }
+            else if(password.length < 8 || password.length > 16){
+                swal({
+                    title: "Password Requirements Not Met!",
+                    text: "Password must be between 8 and 16 characters.",
+                    icon: "error",
+                    button: "OK",
+                });
+            }
+            else if(password !== re_password){
+                swal({
+                    title: "Passwords Don't Match!",
+                    text: "The passwords you entered don't match. Please try again.",
+                    icon: "error",
+                    button: "OK",
+                });
+            }
+            else {
+                swal({
+                    title: "Sign Up Successful!",
+                    text: "Your account has been created successfully.",
+                    icon: "success",
+                    button: "OK",
+                }).then(() => {
+                    window.location.href = "../index.htm";
+                });
+            }
+        }
+    </script>
 </body>
-<script>
-    function signup(){
-      let email = document.getElementById('email').value;
-      let password = document.getElementById('password').value;
-
-      
-      if(email, password){
-        alert("Sign Up Successfully!");
-      }
-
-      else{
-        alert("Please meet the requirements!");
-      }
-    }
-</script>
 </html>
