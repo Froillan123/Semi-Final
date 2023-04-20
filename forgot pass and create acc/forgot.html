@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forgot.css" />
+    <title>Document</title>
+    <!-- Link to SweetAlert library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forgot Password</h1>
+      <form action="../index.htm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+    <script>
+    const form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const email = form.email.value;
+  if (email === "") {
+    Swal.fire({
+      text: "Please enter your email.",
+      icon: "warning",
+    });
+  } else {
+    // Code for resetting user's password goes here
+    Swal.fire({
+      text:
+        "An email has been sent to " +
+        email +
+        " with instructions on how to reset your password.",
+      icon: "success",
+    }).then(() => {
+      window.location.href = "../index.htm";
+    });
+    
+  }
+});
+    </script>
+  </body>
+</html>

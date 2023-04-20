@@ -74,8 +74,7 @@ function msg(){
   var location = document.getElementById('location').value;
   var people = document.getElementById('people').value;
 
-  // Removed parseFloat as it is not necessary and can cause issues
-  // Also changed the if condition to check if the fields are not empty
+
   if(name && address && email && location && number && time && date && people){
     swal({
       icon: 'success',
